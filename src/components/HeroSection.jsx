@@ -47,7 +47,7 @@ function HeroSection({ reducedMotion, onNavigate }) {
       <div className="relative z-10 w-full">
         <div className="flex min-h-[470px] items-center px-6 pb-20 pt-20 sm:min-h-[540px] sm:px-10 sm:pb-24 sm:pt-24 lg:min-h-[602px] lg:px-14 xl:px-24">
           <motion.div className="max-w-[34rem]" {...textMotion}>
-            <h1 className="font-display text-[clamp(3.25rem,6.4vw,5.95rem)] font-normal leading-[0.92] tracking-[-0.055em] text-brandNavy">
+            <h1 className="font-display text-[clamp(3.25rem,6.4vw,5.95rem)] font-semibold leading-[0.92] tracking-[-0.055em] text-brandNavy">
               <span className="block">Where Little</span>
               <span className="block">
                 <span className="text-brandNavy">Minds </span>

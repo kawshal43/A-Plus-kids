@@ -5,3 +5,5 @@ vite.out.log
 vite.err.log
 .DS_Store
 Thumbs.db
+gcm-diagnose.log
+tmp_wix_*.html

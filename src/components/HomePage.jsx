@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import CategoryCard from "./CategoryCard";
 import FeaturedShows from "./FeaturedShows";
 import HeroSection from "./HeroSection";
@@ -6,6 +7,44 @@ import WatchLiveCard from "./WatchLiveCard";
 import { categories, featuredShows } from "../siteData";
 
 function HomePage({ reducedMotion, onNavigate }) {
+  const [videoShows, setVideoShows] = useState(featuredShows);
+
+  useEffect(() => {
+    let isMounted = true;
+
+    async function loadFeaturedVideos() {
+      try {
+        const response = await fetch("/api/featured-videos");
+
+        if (!response.ok) {
+          return;
+        }
+
+        const payload = await response.json();
+        const items = Array.isArray(payload.items) ? payload.items : [];
+
+        if (!items.length || !isMounted) {
+          return;
+        }
+
+        setVideoShows((currentShows) =>
+          currentShows.map(
+            (fallbackShow) =>
+              items.find((item) => item.itemId === fallbackShow.itemId) || fallbackShow,
+          ),
+        );
+      } catch {
+        // Keep the poster-based fallback cards if the endpoint is unavailable.
+      }
+    }
+
+    loadFeaturedVideos();
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
   return (
     <motion.div
       key="home-page"
@@ -48,7 +87,7 @@ function HomePage({ reducedMotion, onNavigate }) {
         </section>
 
         <FeaturedShows
-          shows={featuredShows}
+          shows={videoShows}
           reducedMotion={reducedMotion}
           onNavigate={onNavigate}
         />

@@ -92,64 +92,112 @@ export const categories = [
 
 export const featuredShows = [
   {
-    title: "Story Time",
-    route: "show-story-time",
-    icon: BookOpen,
-    background:
-      "bg-[linear-gradient(135deg,#1F66C9_0%,#2A82EB_44%,#5BB8FF_100%)]",
-    accentClass: "bg-[#FFCC39]/35",
-    lines: [
-      { text: "Story", className: "text-[#FFD539]" },
-      { text: "Time", className: "text-[#FFD539]" },
-    ],
+    itemId: "36ec005a65324799b2050598b53e7d8f",
+    title: "Chat with A Plus Kids",
+    duration: "01:47",
+    pageUrl:
+      "https://www.apluskidstvsl.com/?wix-vod-video-id=36ec005a65324799b2050598b53e7d8f&wix-vod-comp-id=comp-lnbgjcb5",
+    coverUrl:
+      "https://static.wixstatic.com/media/15d579_fb31181b7c54440abca2c8e72b2f32b9f002.jpg",
   },
   {
-    title: "Art Plus",
-    route: "show-art-plus",
-    icon: BrushCleaning,
-    background:
-      "bg-[linear-gradient(135deg,#74D4FF_0%,#A5E5FF_26%,#FFB34C_68%,#FF7E56_100%)]",
-    accentClass: "bg-[#FF6FA0]/35",
-    lines: [
-      { text: "Art", className: "text-white" },
-      { text: "Plus", className: "text-[#6B3FD6]" },
-    ],
+    itemId: "3f63670c0cc244a2b3be5b5b0d850fc0",
+    title: "Chakkaraya Animated",
+    duration: "00:31",
+    pageUrl:
+      "https://www.apluskidstvsl.com/?wix-vod-video-id=3f63670c0cc244a2b3be5b5b0d850fc0&wix-vod-comp-id=comp-lnbgjcb5",
+    coverUrl:
+      "https://static.wixstatic.com/media/15d579_7ab540f2e56e4ce98e3addcaf97bbf22f002.jpg",
   },
   {
-    title: "Fun Factory",
-    route: "show-fun-factory",
-    icon: Sparkles,
-    background:
-      "bg-[linear-gradient(135deg,#6FD7FF_0%,#57C5F8_28%,#7FD763_68%,#30A43A_100%)]",
-    accentClass: "bg-[#FFD53B]/30",
-    lines: [
-      { text: "Fun", className: "text-[#143DA5]" },
-      { text: "Factory", className: "text-[#FFD539]" },
-    ],
+    itemId: "e731c57afe454b1a80a304f949c1d904",
+    title: "Ada Awilla",
+    duration: "01:49",
+    pageUrl:
+      "https://www.apluskidstvsl.com/?wix-vod-video-id=e731c57afe454b1a80a304f949c1d904&wix-vod-comp-id=comp-lnbgjcb5",
+    coverUrl:
+      "https://static.wixstatic.com/media/15d579_d81644a8fbbc48969679c4acad07d379f002.jpg",
   },
   {
-    title: "Kids Fashion",
-    route: "show-kids-fashion",
-    icon: WandSparkles,
-    background:
-      "bg-[linear-gradient(135deg,#8EE0FF_0%,#B7EFFF_28%,#FFC0E3_72%,#FF7AB3_100%)]",
-    accentClass: "bg-[#FFF08A]/32",
-    lines: [
-      { text: "Kids", className: "text-white" },
-      { text: "Fashion", className: "text-white" },
-    ],
+    itemId: "e1dfaacacfa84fc1a8ba7ea8a45fcc23",
+    title: "Poem Animated",
+    duration: "00:33",
+    pageUrl:
+      "https://www.apluskidstvsl.com/?wix-vod-video-id=e1dfaacacfa84fc1a8ba7ea8a45fcc23&wix-vod-comp-id=comp-lnbgjcb5",
+    coverUrl:
+      "https://static.wixstatic.com/media/15d579_797c72525f074f938657b7865ac00fb1f002.jpg",
   },
   {
-    title: "Maya Lokaya",
-    route: "show-maya-lokaya",
-    icon: Trees,
-    background:
-      "bg-[linear-gradient(135deg,#1577C9_0%,#2D9BE9_24%,#44C8E1_45%,#3EBB78_76%,#248E48_100%)]",
-    accentClass: "bg-[#FFE16A]/28",
-    lines: [
-      { text: "Maya", className: "text-[#FFD63B]" },
-      { text: "Lokaya", className: "text-[#FFD63B]" },
-    ],
+    itemId: "910d3ac6bff8413584ef12dc429d0a5a",
+    title: "Dictation",
+    duration: "00:54",
+    pageUrl:
+      "https://www.apluskidstvsl.com/?wix-vod-video-id=910d3ac6bff8413584ef12dc429d0a5a&wix-vod-comp-id=comp-lnbgjcb5",
+    coverUrl:
+      "https://static.wixstatic.com/media/15d579_ca2501dd0f2146b89ea8cccbbba2eb5ef002.jpg",
+  },
+  {
+    itemId: "0578413d619a4206a0b65dda4d1b7d39",
+    title: "Riddles",
+    duration: "00:32",
+    pageUrl:
+      "https://www.apluskidstvsl.com/?wix-vod-video-id=0578413d619a4206a0b65dda4d1b7d39&wix-vod-comp-id=comp-lnbgjcb5",
+    coverUrl:
+      "https://static.wixstatic.com/media/15d579_c69a0c24437e4daa8329f0d1fe5d89bdf002.jpg",
+  },
+  {
+    itemId: "e91e943a9d5f49adac9bfd29028d5584",
+    title: "Tounge Twisters",
+    duration: "00:34",
+    pageUrl:
+      "https://www.apluskidstvsl.com/?wix-vod-video-id=e91e943a9d5f49adac9bfd29028d5584&wix-vod-comp-id=comp-lnbgjcb5",
+    coverUrl:
+      "https://static.wixstatic.com/media/15d579_8c06667b189f42d7bee661117946f4eff002.jpg",
+  },
+  {
+    itemId: "721d99fb1e334baf888d783ab78e5602",
+    title: "Wirudda Pada",
+    duration: "00:32",
+    pageUrl:
+      "https://www.apluskidstvsl.com/?wix-vod-video-id=721d99fb1e334baf888d783ab78e5602&wix-vod-comp-id=comp-lnbgjcb5",
+    coverUrl:
+      "https://static.wixstatic.com/media/15d579_8511137ff9264cc8abdc3472848c7659f002.jpg",
+  },
+  {
+    itemId: "6aa16803e8cc4a2abd534d61b417c316",
+    title: "Theravili",
+    duration: "00:29",
+    pageUrl:
+      "https://www.apluskidstvsl.com/?wix-vod-video-id=6aa16803e8cc4a2abd534d61b417c316&wix-vod-comp-id=comp-lnbgjcb5",
+    coverUrl:
+      "https://static.wixstatic.com/media/15d579_7de5d913325d4fef990ffb5f49f72a47f002.jpg",
+  },
+  {
+    itemId: "71d1e13b3d504d1492dbdc683e7d2249",
+    title: "Honda Purudu",
+    duration: "00:31",
+    pageUrl:
+      "https://www.apluskidstvsl.com/?wix-vod-video-id=71d1e13b3d504d1492dbdc683e7d2249&wix-vod-comp-id=comp-lnbgjcb5",
+    coverUrl:
+      "https://static.wixstatic.com/media/15d579_bcff8aec1f90437abb29c13f3c98d559f002.jpg",
+  },
+  {
+    itemId: "0cd85a8bdcac4f1c8c3439ad2b1d287e",
+    title: "Poem",
+    duration: "00:32",
+    pageUrl:
+      "https://www.apluskidstvsl.com/?wix-vod-video-id=0cd85a8bdcac4f1c8c3439ad2b1d287e&wix-vod-comp-id=comp-lnbgjcb5",
+    coverUrl:
+      "https://static.wixstatic.com/media/15d579_c4c723ad14d54a9298ed11f3561dfee9f002.jpg",
+  },
+  {
+    itemId: "c3bff526df02416eacafd8425c8729c2",
+    title: "Jeewithayata Pata Denna",
+    duration: "01:18",
+    pageUrl:
+      "https://www.apluskidstvsl.com/?wix-vod-video-id=c3bff526df02416eacafd8425c8729c2&wix-vod-comp-id=comp-lnbgjcb5",
+    coverUrl:
+      "https://static.wixstatic.com/media/15d579_4f88b0d032704615b35f4cf385e18a53f002.jpg",
   },
 ];
 
