@@ -172,10 +172,7 @@ function FeaturedShowCard({ show, index, reducedMotion }) {
       />
 
       <div className="relative z-10 flex h-full flex-col justify-between p-4 sm:p-5">
-        <div className="flex items-start justify-between gap-3">
-          <span className="rounded-full bg-white/88 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.12em] text-brandNavy/88 backdrop-blur-sm">
-            Featured
-          </span>
+        <div className="flex items-start justify-end gap-3">
           {show.duration ? (
             <span className="rounded-full bg-brandNavy/72 px-3 py-1 text-[0.72rem] font-semibold text-white backdrop-blur-sm">
               {show.duration}
@@ -184,7 +181,7 @@ function FeaturedShowCard({ show, index, reducedMotion }) {
         </div>
 
         <div className="max-w-[16ch]">
-          <span className="block text-[1.75rem] font-bold leading-[0.92] tracking-[-0.055em] text-white drop-shadow-[0_8px_20px_rgba(7,26,68,0.35)] sm:text-[1.95rem]">
+          <span className="block text-[1.75rem] font-medium leading-[0.92] tracking-[-0.055em] text-white drop-shadow-[0_8px_20px_rgba(7,26,68,0.35)] sm:text-[1.95rem]">
             {show.title}
           </span>
         </div>
