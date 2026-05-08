@@ -294,26 +294,30 @@ function FeaturedShows({ shows, reducedMotion, onNavigate }) {
         <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-36 bg-[linear-gradient(270deg,rgba(247,251,255,0.99)_18%,rgba(247,251,255,0.82)_42%,rgba(247,251,255,0)_100%)] lg:block" />
 
         {canScrollLeft ? (
-          <motion.button
-            type="button"
-            onClick={() => scrollRailBy(-1)}
-            aria-label="Show previous videos"
-            className="absolute left-2 top-1/2 hidden h-[62px] w-[62px] -translate-y-1/2 items-center justify-center rounded-full bg-white text-brandBlue shadow-card lg:flex"
-            {...buttonMotion}
-          >
-            <ArrowLeft className="h-6 w-6" strokeWidth={2.4} />
-          </motion.button>
+          <div className="absolute left-2 top-1/2 hidden -translate-y-1/2 lg:flex">
+            <motion.button
+              type="button"
+              onClick={() => scrollRailBy(-1)}
+              aria-label="Show previous videos"
+              className="flex h-[62px] w-[62px] items-center justify-center rounded-full bg-white text-brandBlue shadow-card"
+              {...buttonMotion}
+            >
+              <ArrowLeft className="h-6 w-6" strokeWidth={2.4} />
+            </motion.button>
+          </div>
         ) : null}
 
-        <motion.button
-          type="button"
-          onClick={handleRightAction}
-          aria-label={canScrollRight ? "Show more videos" : "See all featured shows"}
-          className="absolute right-2 top-1/2 z-10 flex h-[68px] w-[68px] -translate-y-1/2 items-center justify-center rounded-full border border-white/70 bg-white/95 text-brandBlue shadow-[0_18px_40px_rgba(17,90,170,0.18)] backdrop-blur-sm lg:right-3 lg:h-[74px] lg:w-[74px]"
-          {...buttonMotion}
-        >
-          <ArrowRight className="h-7 w-7" strokeWidth={2.55} />
-        </motion.button>
+        <div className="absolute right-2 top-1/2 z-10 -translate-y-1/2 lg:right-3">
+          <motion.button
+            type="button"
+            onClick={handleRightAction}
+            aria-label={canScrollRight ? "Show more videos" : "See all featured shows"}
+            className="flex h-[68px] w-[68px] items-center justify-center rounded-full border border-white/70 bg-white/95 text-brandBlue shadow-[0_18px_40px_rgba(17,90,170,0.18)] backdrop-blur-sm lg:h-[74px] lg:w-[74px]"
+            {...buttonMotion}
+          >
+            <ArrowRight className="h-7 w-7" strokeWidth={2.55} />
+          </motion.button>
+        </div>
       </div>
     </section>
   );
